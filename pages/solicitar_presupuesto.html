@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Solicitar Presupuesto</title>
+</head>
+
+<body class="body">
+    <div class="body--header">
+        <header class="header--grid">
+            <div class="header--grid__column1">
+                <img class="header_img" src="../images/logo.jpg" alt="" />
+            </div>
+            <div class="header--grid__column2">
+                <nav class="navbar navbar-expand-md navbar-dark bg-transparent">
+                    <div class="container">
+                        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse mt-2 mt-md-0" id="menuPrincipal">
+                            <ul class="navbar-nav ms-auto w-100">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./servicios.html">Servicios</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./nuestros_cursos.html">Nuestros Cursos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./solicitar_presupuesto.html">Solicitar
+                                        Presupuesto</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./sobre_la_empresa.html">Sobre la Empresa</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <section class="presupuesto_section">
+        <h1>Solicitar Presupuesto</h1>
+        <p>
+            Estimado cliente, su tiempo y comodidad son muy importantes para nosotros, por eso le pedimos que complete
+            el siguiente formulario con la mayor precisión posible. Este paso previo es fundamental para brindarle un
+            servicio más ágil, organizado y eficiente. Al contar con esta información anticipadamente, el profesional
+            matriculado que lo visite estará completamente informado sobre las características específicas del trabajo a
+            realizar, lo que le permitirá llegar al domicilio preparado, con los insumos y herramientas adecuadas para
+            la tarea.
+        </p>
+        <p>
+            Además, este formulario nos ayuda a comprender en detalle sus necesidades particulares, ya sea que se trate
+            de una instalación nueva, una reparación, una revisión técnica o el mantenimiento preventivo del equipo. De
+            este modo, no solo optimizamos el tiempo del presupuesto definitivo, sino que también garantizamos una
+            atención personalizada y orientada a resolver su situación de la manera más efectiva posible.
+        </p>
+        <p>
+            Una vez completado el formulario, usted recibirá un correo electrónico automático con un cálculo estimativo
+            del costo total del servicio, basado en los datos que usted haya ingresado. Este valor no reemplaza al
+            presupuesto final que se definirá en el lugar, pero sí le servirá como una referencia inicial para su
+            tranquilidad.
+        </p>
+        <p>
+            Por favor, tenga en cuenta que el correcto llenado del formulario agiliza todo el proceso y nos permite
+            brindarle un servicio de mayor calidad. A continuación, podrá seleccionar el tipo de servicio para el cual
+            desea solicitar presupuesto: aires acondicionados, heladeras familiares o heladeras comerciales. Según su
+            elección, se cargará automáticamente el formulario específico correspondiente a su necesidad. ¡Gracias por
+            confiar en nosotros!
+        </p>
+
+
+
+        <form method="get" id="formSeleccion">
+            <label for="servicio">Seleccione el tipo de servicio:</label>
+            <select id="servicio" name="url" onchange="this.form.action=this.value; this.form.submit()" required>
+                <option value="">-- Elegí una opción --</option>
+                <option value="./presupuesto_aires_acondicionados.html">Aires Acondicionados</option>
+                <option value="./presupuesto_heladeras_familiares.html">Heladeras Familiares</option>
+                <option value="./presupuesto_heladeras_comerciales.html">Heladeras Comerciales</option>
+            </select>
+        </form>
+    </section>
+    </main>
+    </section>
+    </main>
+    <footer class="footer">
+        <div class="footer--grid">
+            <div class="footer--grid__column1">
+                <img class="footer_img" src="../images/logo.jpg" alt="" />
+            </div>
+            <div class="footer--grid__column2">
+                <div class="footer--grid__column2__title">
+                    <h2 class="footer_h2">CONTACTO</h2>
+                </div>
+                <div class="footer--grid__column2__content">
+                    <p class="footer_p"></p>
+                    Telefonos: (011) 15-5431-2782<br />Correo: shlrefrigeracion@gmail.com
+                </div>
+                <div class="footer--grid__column2__content">
+                    <p>Lunes a sabados de 9 a 22 hs.</p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"
+        integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

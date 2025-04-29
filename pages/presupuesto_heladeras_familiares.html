@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+
+<body class="body">
+    <div class="body--header">
+        <header class="header--grid">
+            <div class="header--grid__column1">
+                <img class="header_img" src="../images/logo.jpg" alt="" />
+            </div>
+            <div class="header--grid__column2">
+                <nav class="navbar navbar-expand-md navbar-dark bg-transparent">
+                    <div class="container">
+                        <button class="navbar-toggler  ml-auto" type="button" data-toggle="collapse" data-target="#menuPrincipal"
+                            aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse mt-2 mt-md-0" id="menuPrincipal">
+                            <ul class="navbar-nav ml-auto w-100 ">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./servicios.html">Servicios</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./nuestros_cursos.html">Nuestros Cursos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./solicitar_presupuesto.html">Solicitar Presupuesto</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./sobre_la_empresa.html">Sobre la Empresa</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <form id="presupuesto_form" action="#" method="post">
+        <input type="text" placeholder="Nombre y apellido" id="nombre" name="nombre" required>
+        <input type="email" placeholder="Email" id="email" name="email" required>
+        <input type="telefono" placeholder="Telefono/Celular" id="telefono" name="telefono" required>
+        <input type="domicilio" placeholder="Domicilio" id="domicilio" name="domicilio" required>
+        <select id="localidad" name="localidad">
+            <option value="zona_norte">Zona Norte</option>
+            <option value="zona_oeste">Zona Oeste</option>
+            <option value="caba">CABA</option>
+        </select>
+
+        <h3>DATOS DEL EQUIPO</h3>
+    <form id="presupuesto_form" action="#" method="post">
+        <select id="tipo" name="tipo">
+            <option value="heladera">Heladera</option>
+            <option value="heladera_comercial ">Heladera Comercial <a href="../index.html"></a></option>
+            <option value="aire">Aire Acondicionado</option>
+        </select>
+        <input type="text" placeholder="Detalles del equipo" id="detalles" name="detalles" required>
+        <select id="marca" name="marca">
+            <option value="surrey">Surrey</option>
+            <option value="lg">LG</option>
+            <option value="samsung">Samsung</option>
+        </select>
+        <select id="inmueble" name="inmueble">
+            <option value="casa">Casa</option>
+            <option value="edificio">Edificio</option>
+        </select>
+        <h3>INFORMACION ADICIONAL</h3>
+        <input type="text" placeholder="Indique cualquier informacion adicional que nos ayude a preparar su presupuesto" id="adicional" name="adicional" required>
+        <button type="submit">Enviar</button>
+    </form>
+    <footer class="footer">
+        <div class="footer--grid">
+            <div class="footer--grid__column1">
+                <img class="footer_img" src="../images/logo.jpg" alt="" />
+            </div>
+            <div class="footer--grid__column2">
+                <div class="footer--grid__column2__title">
+                    <h2 class="footer_h2">CONTACTO</h2>
+                </div>
+                <div class="footer--grid__column2__content">
+                    <p class="footer_p"></p>
+                    Telefonos: (011) 15-5431-2782<br />Correo: shlrefrigeracion@gmail.com
+                </div>
+                <div class="footer--grid__column2__content">
+                    <p>Lunes a sabados de 9 a 22 hs.</p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"
+        integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
