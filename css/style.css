@@ -11,9 +11,6 @@ body {
 
 }
 
-
-  
-
 .header_img {
     max-width: 100px;
     height: auto;
@@ -56,33 +53,36 @@ body {
     color: #fff;
 }
 
+
+
+/*home*/
+
 .contenido_principal {
     flex: 1;
 }
-/*home*/
-
 .contenido {
     position: relative;
     z-index: 2;
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
-  }
+}
+
 .main--section__contenido h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
-  }
-  
- 
-  .main--section__contenido p {
+}
+
+
+.main--section__contenido p {
     font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 1.5rem;
     color: #ffffff;
-  }
-  
-  
-  .btn {
+}
+
+
+.btn {
     display: inline-block;
     background-color: #004080;
     color: white;
@@ -90,111 +90,29 @@ body {
     padding: 0.75rem 1.5rem;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-  }
-  
-  .btn:hover {
+}
+
+.btn:hover {
     background-color: #0059b3;
-  }
+}
+
 .main--section__contenido {
-    background-image: url('../images/banner.jpg'); /* Reemplazá por tu ruta */
+    background-image: url('../images/banner.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
     padding: 4rem 1rem;
     color: white;
-  }
-  
- 
-  .main--section__contenido::before {
+}
+
+
+.main--section__contenido::before {
     content: '';
     position: absolute;
     inset: 0;
     background-color: rgba(169, 175, 182, 0.6);
     z-index: 1;
-  }
-  
- 
-  
-  
- 
-  
-  
-
-/*sobre la empresa*/
-
-main.main--empresa {
-    padding: 2rem 1rem;
-  }
-  
-  /* Sección Empresa */
-  .section--empresa {
-    max-width: 800px;
-    margin: 0 auto 3rem;
-    text-align: center;
-  }
-  
-  .section--empresa h1 {
-    font-size: 1.75rem;
-    color: #004080;
-    margin-bottom: 1rem;
-  }
-  
-  .section--empresa h3 {
-    color: #004080;
-    margin-top: 2rem;
-    font-weight: 600;
-  }
-  
-  .section--empresa p {
-    margin-bottom: 1rem;
-  }
-  
-  /* Opiniones */
-  .opiniones {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .section--opiniones__grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr); /* Mobile: 2 columnas */
-    gap: 1rem;
-    padding: 1rem;
-  }
-  
-  .section--opiniones__imagenes img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .section--opiniones__imagenes img:hover {
-    transform: scale(1.03);
-    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-  }
-
-/*nuestros cursos*/
-
-.video1 {
-    border-radius: 10px;
-    border: #00c8f8 solid 2px;
-    display: inline-block;
-}
-
-.video2 {
-    border-radius: 10px;
-    border: #00c8f8 solid 2px;
-    display: inline-block;
-}
-
-.video3 {
-    border-radius: 10px;
-    border: #00c8f8 solid 2px;
-    display: inline-block;
 }
 
 /*servicios*/
@@ -311,6 +229,26 @@ main.main--empresa {
     color: #000;
 }
 
+/*nuestros cursos*/
+
+.video1 {
+    border-radius: 10px;
+    border: #00c8f8 solid 2px;
+    display: inline-block;
+}
+
+.video2 {
+    border-radius: 10px;
+    border: #00c8f8 solid 2px;
+    display: inline-block;
+}
+
+.video3 {
+    border-radius: 10px;
+    border: #00c8f8 solid 2px;
+    display: inline-block;
+}
+
 /*solicitar presupuesto*/
 
 .presupuesto_section {
@@ -365,48 +303,138 @@ select:focus {
     outline: none;
 }
 
-.footer {
-    background-color: #00c8f8;
-    color: white;
-    padding: 10px;
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    /* Las columnas estarán apiladas en móvil */
-    align-items: center;
-    justify-content: center;
+/*formularios de presupuesto*/
+
+h3 {
     text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+form {
+    background-color: #fff;
+    color: #000;
+    padding: 1.5rem;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    width: 100%;
+    background-color: #00c8f8;
+    color: #fff;
+    border: none;
+    padding: 0.9rem;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #00c8f8;
+}
+
+/*sobre la empresa*/
+
+main.main--empresa {
+    padding: 2rem 1rem;
+}
+
+.section--empresa {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+
+.section--empresa h1 {
+    font-size: 1.75rem;
+    color: #004080;
+    margin-bottom: 1rem;
+}
+
+.section--empresa h3 {
+    color: #004080;
+    margin-top: 2rem;
+    font-weight: 600;
+}
+
+.section--empresa p {
+    margin-bottom: 1rem;
+}
+
+.opiniones {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section--opiniones__grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.section--opiniones__imagenes img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section--opiniones__imagenes img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+/*footer*/
+
+.footer {
+    margin-top: 3rem;
+    padding: 2rem;
+    background-color: #00c8f8;
+    color: #fff;
 }
 
 .footer--grid {
     display: flex;
     flex-direction: column;
-    /* En móviles, los items estarán apilados */
     align-items: center;
-    justify-content: center;
+    gap: 1.5rem;
+    text-align: center;
 }
 
 .footer_img {
-    max-width: 100px;
-    height: auto;
-    border-radius: 10px;
-    display: block;
-
+    max-width: 120px;
+    border-radius: 8px;
 }
 
-.footer--grid__column2 {
-    max-width: 300px;
-}
-
-.footer_h2 {
-    margin-top: 20px;
-    font-size: 1.4rem;
-    color: #f8f9fa;
-}
-
-.footer--grid__column2__content {
-    font-size: 0.9rem;
-    
+.footer--grid__column2__title h2 {
+    margin: 0;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 0.5rem;
 }
 
 /*mediaquery*/
@@ -426,7 +454,7 @@ select:focus {
         padding: 20px;
     }
 
-   
+
     h1 {
         font-size: 2rem;
     }
@@ -445,11 +473,16 @@ select:focus {
 
     .section--empresa h1 {
         font-size: 2.25rem;
-      }
-    
-      .section--opiniones__grid {
+    }
+
+    form {
+        padding: 2rem 3rem;
+    }
+
+    .section--opiniones__grid {
         grid-template-columns: repeat(2, 1fr);
-      }
+    }
+
     .footer {
         display: flex;
         padding: 0;
@@ -461,17 +494,16 @@ select:focus {
     .footer--grid {
         display: flex;
         flex-direction: row;
-        /* Cambiamos a un layout horizontal */
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        /* Aseguramos que ocupe todo el ancho */
+
     }
 
     .footer--grid__column1,
     .footer--grid__column2 {
         flex: 1;
-        /* Ambas columnas ocupan el mismo espacio */
+
     }
 
     .footer--grid__column1 {
@@ -496,14 +528,14 @@ select:focus {
 
     .footer_img {
         width: 150px;
-        /* Aumentamos el tamaño del logo en pantallas más grandes */
+
         margin-bottom: 0;
     }
 
     .footer_h2 {
         font-weight: bold;
         font-size: 1.5rem;
-        /* Aumentamos el tamaño de texto en pantallas más grandes */
+
     }
 
     .footer--grid__column2__content {
