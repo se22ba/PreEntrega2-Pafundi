@@ -50,7 +50,7 @@
     </div>
 
     <section class="section--presupuesto--servicios">
-        <h3>Solicitar Presupuesto</h3>
+        <h3>DATOS PERSONALES</h3>
         <form class="section--presupuesto__form" action="#" method="post">
             <input type="text" placeholder="Nombre y apellido" id="nombre" name="nombre" required>
             <input type="email" placeholder="Email" id="email" name="email" required>
@@ -64,22 +64,33 @@
                 <option value="caba">CABA</option>
             </select>
 
-            <h3>Datos del equipo</h3>
+            <h3>DATOS DEL EQUIPO</h3>
 
             <select id="tipo" name="tipo" required>
                 <option value="" disabled selected>Selecciona el tipo de equipo</option>
-                <option value="heladera">Heladera</option>
-                <option value="heladera_comercial">Heladera Comercial</option>
-                <option value="aire">Aire Acondicionado</option>
+                <option value="heladera">Heladera ciclica</option>
+                <option value="heladera_comercial">Heladera NoFrost</option>
+                <option value="aire">Freezer</option>
+                <option value="aire">Desconozco</option>
             </select>
-
-            <input type="text" placeholder="Detalles del equipo" id="detalles" name="detalles" required>
-
-            <select id="marca" name="marca" required>
+            
+                
+            
+            <select id="marca" name="marca" required>Whirlpool
                 <option value="" disabled selected>Selecciona la marca</option>
-                <option value="surrey">Surrey</option>
-                <option value="lg">LG</option>
-                <option value="samsung">Samsung</option>
+                <option value="Samsung">Samsung</option>
+                <option value="LG">LG</option>
+                <option value="Whirlpool">Whirlpool</option>
+                <option value="Electrolux">Electrolux</option>
+                <option value="Gafa">Gafa</option>
+                <option value="Philco">Philco</option>
+                <option value="Drean">Drean</option>
+                <option value="Patrick">Patrick</option>
+                <option value="Inelro">Inelro</option>
+                <option value="Bosch">Bosch</option>
+                <option value="Hisense">Hisense</option>
+                <option value="OTRA">OTRA</option>
+                
             </select>
 
             <select id="inmueble" name="inmueble" required>
@@ -88,7 +99,7 @@
                 <option value="edificio">Edificio</option>
             </select>
 
-            <h3>Información adicional</h3>
+            <h3>INFORMACION ADICIONAL</h3>
             <textarea id="adicional" name="adicional"
                 placeholder="Indique cualquier información adicional que nos ayude a preparar su presupuesto" rows="4"
                 required></textarea>
