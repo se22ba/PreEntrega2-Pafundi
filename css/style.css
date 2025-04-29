@@ -60,6 +60,7 @@ body {
 .contenido_principal {
     flex: 1;
 }
+
 .contenido {
     position: relative;
     z-index: 2;
@@ -251,7 +252,7 @@ body {
 
 /*solicitar presupuesto*/
 
-.presupuesto_section {
+.section--presupuesto {
     max-width: 600px;
     margin: auto;
     background-color: #fff;
@@ -264,6 +265,7 @@ h1 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
     color: #2b2b2b;
+    text-align: center;
 }
 
 p {
@@ -299,7 +301,7 @@ select {
 }
 
 select:focus {
-    border-color: #007BFF;
+    border-color: #00c8f8;
     outline: none;
 }
 
@@ -309,18 +311,18 @@ h3 {
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    color: #fff;
+    color: #00c8f8;
 }
 
 form {
     background-color: #fff;
-    color: #000;
+    color: #00c8f8;
     padding: 1.5rem;
     border-radius: 12px;
     width: 90%;
     max-width: 900px;
     margin: 0 auto;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 12px #00c6f81a;
 }
 
 form input,
@@ -329,7 +331,7 @@ form textarea {
     width: 100%;
     padding: 0.75rem;
     margin-bottom: 1rem;
-    border: 1px solid #ccc;
+    border: 1px solid #00c8f8;
     border-radius: 8px;
     font-size: 1rem;
     box-sizing: border-box;
@@ -341,7 +343,7 @@ form textarea {
 
 form button {
     width: 100%;
-    background-color: #00c8f8;
+    background-color: #00c6f8;
     color: #fff;
     border: none;
     padding: 0.9rem;
@@ -352,7 +354,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #00c8f8;
+    background-color: #00c6f8;
 }
 
 /*sobre la empresa*/
@@ -475,7 +477,17 @@ main.main--empresa {
         font-size: 2.25rem;
     }
 
+    .section--presupuesto {
+        max-width: 75vw;
+
+        background-color: #fff;
+        border-radius: 12px;
+        padding: 2rem;
+        box-shadow: 0 4px 16px #00c6f827;
+    }
+
     form {
+        max-width: 800px;
         padding: 2rem 3rem;
     }
 

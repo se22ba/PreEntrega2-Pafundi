@@ -11,7 +11,6 @@
 </head>
 
 <body class="body">
-
     <div class="body--header">
         <header class="header--grid">
             <div class="header--grid__column1">
@@ -49,51 +48,54 @@
             </div>
         </header>
     </div>
-    <h3>Solicitar Presupuesto</h3>
-    <form id="presupuesto_form" action="#" method="post">
-        <input type="text" placeholder="Nombre y apellido" id="nombre" name="nombre" required>
-        <input type="email" placeholder="Email" id="email" name="email" required>
-        <input type="text" placeholder="Teléfono / Celular" id="telefono" name="telefono" required>
-        <input type="text" placeholder="Domicilio" id="domicilio" name="domicilio" required>
+    <section class="section--presupuesto--servicios">
+        <h3>Solicitar Presupuesto</h3>
+        <form class="section--presupuesto__form" action="#" method="post">
+            <input type="text" placeholder="Nombre y apellido" id="nombre" name="nombre" required>
+            <input type="email" placeholder="Email" id="email" name="email" required>
+            <input type="text" placeholder="Teléfono / Celular" id="telefono" name="telefono" required>
+            <input type="text" placeholder="Domicilio" id="domicilio" name="domicilio" required>
 
-        <select id="localidad" name="localidad" required>
-            <option value="" disabled selected>Selecciona tu localidad</option>
-            <option value="zona_norte">Zona Norte</option>
-            <option value="zona_oeste">Zona Oeste</option>
-            <option value="caba">CABA</option>
-        </select>
+            <select id="localidad" name="localidad" required>
+                <option value="" disabled selected>Selecciona tu localidad</option>
+                <option value="zona_norte">Zona Norte</option>
+                <option value="zona_oeste">Zona Oeste</option>
+                <option value="caba">CABA</option>
+            </select>
 
-        <h3>Datos del equipo</h3>
+            <h3>Datos del equipo</h3>
 
-        <select id="tipo" name="tipo" required>
-            <option value="" disabled selected>Selecciona el tipo de equipo</option>
-            <option value="heladera">Heladera</option>
-            <option value="heladera_comercial">Heladera Comercial</option>
-            <option value="aire">Aire Acondicionado</option>
-        </select>
+            <select id="tipo" name="tipo" required>
+                <option value="" disabled selected>Selecciona el tipo de equipo</option>
+                <option value="heladera">Heladera</option>
+                <option value="heladera_comercial">Heladera Comercial</option>
+                <option value="aire">Aire Acondicionado</option>
+            </select>
 
-        <input type="text" placeholder="Detalles del equipo" id="detalles" name="detalles" required>
+            <input type="text" placeholder="Detalles del equipo" id="detalles" name="detalles" required>
 
-        <select id="marca" name="marca" required>
-            <option value="" disabled selected>Selecciona la marca</option>
-            <option value="surrey">Surrey</option>
-            <option value="lg">LG</option>
-            <option value="samsung">Samsung</option>
-        </select>
+            <select id="marca" name="marca" required>
+                <option value="" disabled selected>Selecciona la marca</option>
+                <option value="surrey">Surrey</option>
+                <option value="lg">LG</option>
+                <option value="samsung">Samsung</option>
+            </select>
 
-        <select id="inmueble" name="inmueble" required>
-            <option value="" disabled selected>Tipo de inmueble</option>
-            <option value="casa">Casa</option>
-            <option value="edificio">Edificio</option>
-        </select>
+            <select id="inmueble" name="inmueble" required>
+                <option value="" disabled selected>Tipo de inmueble</option>
+                <option value="casa">Casa</option>
+                <option value="edificio">Edificio</option>
+            </select>
 
-        <h3>Información adicional</h3>
-        <textarea id="adicional" name="adicional"
-            placeholder="Indique cualquier información adicional que nos ayude a preparar su presupuesto" rows="4"
-            required></textarea>
+            <h3>Información adicional</h3>
+            <textarea id="adicional" name="adicional"
+                placeholder="Indique cualquier información adicional que nos ayude a preparar su presupuesto" rows="4"
+                required></textarea>
 
-        <button type="submit">Enviar</button>
-    </form>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
     <footer class="footer">
         <div class="footer--grid">
             <div class="footer--grid__column1">
