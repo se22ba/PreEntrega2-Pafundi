@@ -53,8 +53,6 @@ body {
     color: #fff;
 }
 
-
-
 /*home*/
 
 .contenido_principal {
@@ -124,6 +122,7 @@ body {
     border-radius: 10px;
     overflow: hidden;
 }
+
 
 .grid--section__column1::before {
     content: "";
