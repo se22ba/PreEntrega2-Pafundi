@@ -1,0 +1,115 @@
+@media (min-width: 768px) {
+
+    .navbar-nav {
+        align-items: center;
+        text-align: center;
+        justify-content: right;
+    }
+
+    .header--grid__column2 {
+        align-items: center;
+        text-align: center;
+        justify-content: right;
+        padding: 20px;
+    }
+
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    .main--grid__section {
+        display: grid;
+        flex-direction: column;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .section--empresa h1 {
+        font-size: 2.25rem;
+    }
+
+    .section--presupuesto {
+        max-width: 75vw;
+
+        background-color: #fff;
+        border-radius: 12px;
+        padding: 2rem;
+        box-shadow: 0 4px 16px #00c6f827;
+    }
+
+    form {
+        max-width: 800px;
+        padding: 2rem 3rem;
+    }
+
+    .section--opiniones__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+
+    }
+
+    .footer--grid {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .footer--grid__column1,
+    .footer--grid__column2 {
+        flex: 1;
+
+    }
+
+    .footer--grid__column1 {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .footer--grid__column2 {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        text-align: right;
+        padding-right: 20px;
+    }
+
+
+    .footer_img {
+        width: 150px;
+
+        margin-bottom: 0;
+    }
+
+    .footer_h2 {
+        font-weight: bold;
+        font-size: 1.5rem;
+
+    }
+
+    .footer--grid__column2__content {
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+    }
+}

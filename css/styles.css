@@ -1,557 +1,506 @@
 body {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
 }
-
-.header_img {
-    max-width: 100px;
-    height: auto;
-    border-radius: 10px;
-    display: block;
-}
-
-.header--grid {
-    background-color: #00c8f8;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    padding: 10px;
-
-}
-
-.header--grid__column1 {
-    text-align: left;
-    align-items: end;
-}
-
-.header--grid__column2 {
-    text-align: right;
-}
-
-.navbar-nav {
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.navbar-nav .nav-link {
-    text-align: right;
-
-    width: 100%;
-    font-family: arial, sans-serif;
-
-    font-size: 1.1rem;
-
-    font-weight: bold;
-    color: #fff;
-}
-
-/*home*/
-
-.contenido_principal {
-    flex: 1;
-}
-
-.contenido {
-    position: relative;
-    z-index: 2;
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.main--section__contenido h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-
-.main--section__contenido p {
-    font-size: 1rem;
-    line-height: 1.5;
-    margin-bottom: 1.5rem;
-    color: #ffffff;
-}
-
-
-.btn {
-    display: inline-block;
-    background-color: #004080;
-    color: white;
-    text-decoration: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #0059b3;
-}
-
-.main--section__contenido {
-    background-image: url('../images/banner.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    padding: 4rem 1rem;
-    color: white;
-}
-
-
-.main--section__contenido::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-color: rgba(169, 175, 182, 0.6);
-    z-index: 1;
-}
-
-/*servicios*/
-
-.grid--section__column1 {
-    position: relative;
-    border-style: solid;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-
-.grid--section__column1::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/servicio_1.jpg);
-    background-size: cover;
-    background-position: center;
-    opacity: 0.2;
-    z-index: 0;
-}
-
-.grid--section__column1 .grid--section__column1__content {
-    position: relative;
-    z-index: 1;
-    padding: 1rem;
-    color: #000;
-}
-
-.grid--section__column2 {
-    position: relative;
-    border-style: solid;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.grid--section__column2::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/servicio_2.jpg);
-    background-size: cover;
-    background-position: center;
-    opacity: 0.2;
-    z-index: 0;
-}
-
-.grid--section__column2 .grid--section__column2__content {
-    position: relative;
-    z-index: 1;
-    padding: 1rem;
-    color: #000;
-}
-
-.grid--section__column3 {
-    position: relative;
-    border-style: solid;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.grid--section__column3::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/servicio_3.jpg);
-    background-size: cover;
-    background-position: center;
-    opacity: 0.2;
-    z-index: 0;
-}
-
-.grid--section__column3 .grid--section__column3__content {
-    position: relative;
-    z-index: 1;
-    padding: 1rem;
-    color: #000;
-}
-
-.grid--section__column4 {
-    position: relative;
-    border-style: solid;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.grid--section__column4::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/servicio_4.jpg);
-    background-size: cover;
-    background-position: center;
-    opacity: 0.2;
-    z-index: 0;
-}
-
-.grid--section__column4 .grid--section__column4__content {
-    position: relative;
-    z-index: 1;
-    padding: 1rem;
-    color: #000;
-}
-
-/*nuestros cursos*/
 
 .video1 {
-    border-radius: 10px;
-    border: #00c8f8 solid 2px;
-    display: inline-block;
+  border-radius: 10px;
+  border: #00c8f8 solid 2px;
+  display: inline-block;
 }
 
 .video2 {
-    border-radius: 10px;
-    border: #00c8f8 solid 2px;
-    display: inline-block;
+  border-radius: 10px;
+  border: #00c8f8 solid 2px;
+  display: inline-block;
 }
 
 .video3 {
-    border-radius: 10px;
-    border: #00c8f8 solid 2px;
-    display: inline-block;
+  border-radius: 10px;
+  border: #00c8f8 solid 2px;
+  display: inline-block;
 }
 
-/*solicitar presupuesto*/
+main.main--empresa {
+  padding: 2rem 1rem;
+}
 
-.section--presupuesto {
-    max-width: 600px;
-    margin: auto;
+.section--empresa {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.section--empresa h1 {
+  font-size: 1.75rem;
+  color: #004080;
+  margin-bottom: 1rem;
+}
+
+.section--empresa h3 {
+  color: #004080;
+  margin-top: 2rem;
+  font-weight: 600;
+}
+
+.section--empresa p {
+  margin-bottom: 1rem;
+}
+
+.opiniones {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section--opiniones__grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.section--opiniones__imagenes img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section--opiniones__imagenes img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.footer {
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: #00c8f8;
+  color: #fff;
+}
+
+.footer--grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.footer_img {
+  max-width: 120px;
+  border-radius: 8px;
+}
+
+.footer--grid__column2__title h2 {
+  margin: 0;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 0.5rem;
+}
+
+.header_img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+
+.header--grid {
+  background-color: #00c8f8;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.header--grid__column1 {
+  text-align: left;
+  align-items: end;
+}
+
+.header--grid__column2 {
+  text-align: right;
+}
+
+.navbar-nav {
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.navbar-nav .nav-link {
+  text-align: right;
+  width: 100%;
+  font-family: arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.contenido_principal {
+  flex: 1;
+}
+
+.contenido {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main--section__contenido h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.main--section__contenido p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #004080;
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0059b3;
+}
+
+.main--section__contenido {
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 4rem 1rem;
+  color: white;
+}
+
+.main--section__contenido::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(169, 175, 182, 0.6);
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    align-items: center;
+    text-align: center;
+    justify-content: right;
+  }
+  .header--grid__column2 {
+    align-items: center;
+    text-align: center;
+    justify-content: right;
+    padding: 20px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.1rem;
+  }
+  .main--grid__section {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 20px;
+  }
+  .section--empresa h1 {
+    font-size: 2.25rem;
+  }
+  .section--presupuesto {
+    max-width: 75vw;
     background-color: #fff;
     border-radius: 12px;
     padding: 2rem;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 16px rgba(0, 198, 248, 0.1529411765);
+  }
+  form {
+    max-width: 800px;
+    padding: 2rem 3rem;
+  }
+  .section--opiniones__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .footer--grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .footer--grid__column1,
+  .footer--grid__column2 {
+    flex: 1;
+  }
+  .footer--grid__column1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    padding-left: 20px;
+  }
+  .footer--grid__column2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+    padding-right: 20px;
+  }
+  .footer_img {
+    width: 150px;
+    margin-bottom: 0;
+  }
+  .footer_h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .footer--grid__column2__content {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+}
+.section--presupuesto {
+  max-width: 600px;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
 h1 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    color: #2b2b2b;
-    text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #2b2b2b;
+  text-align: center;
 }
 
 p {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 2rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
 }
 
 h3 {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    color: #004a7c;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #004a7c;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 label {
-    font-weight: 600;
-    margin-bottom: 0.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 
 select {
-    padding: 0.75rem;
-    font-size: 1rem;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    background-color: #fff;
-    transition: border-color 0.3s ease;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
 }
 
 select:focus {
-    border-color: #00c8f8;
-    outline: none;
+  border-color: #00c8f8;
+  outline: none;
 }
 
-/*formularios de presupuesto*/
+.grid--section__column1 {
+  position: relative;
+  border-style: solid;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.grid--section__column1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/servicio_1.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.grid--section__column1 .grid--section__column1__content {
+  position: relative;
+  z-index: 1;
+  padding: 1rem;
+  color: #000;
+}
+
+.grid--section__column2 {
+  position: relative;
+  border-style: solid;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.grid--section__column2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/servicio_2.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.grid--section__column2 .grid--section__column2__content {
+  position: relative;
+  z-index: 1;
+  padding: 1rem;
+  color: #000;
+}
+
+.grid--section__column3 {
+  position: relative;
+  border-style: solid;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.grid--section__column3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/servicio_3.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.grid--section__column3 .grid--section__column3__content {
+  position: relative;
+  z-index: 1;
+  padding: 1rem;
+  color: #000;
+}
+
+.grid--section__column4 {
+  position: relative;
+  border-style: solid;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.grid--section__column4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/servicio_4.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.grid--section__column4 .grid--section__column4__content {
+  position: relative;
+  z-index: 1;
+  padding: 1rem;
+  color: #000;
+}
 
 h3 {
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    color: #00c8f8;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #00c8f8;
 }
 
 form {
-    background-color: #fff;
-    color: #00c8f8;
-    padding: 1.5rem;
-    border-radius: 12px;
-    width: 90%;
-    max-width: 900px;
-    margin: 0 auto;
-    box-shadow: 0 4px 12px #00c6f81a;
+  background-color: #fff;
+  color: #00c8f8;
+  padding: 1.5rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 198, 248, 0.1019607843);
 }
 
 form input,
 form select,
 form textarea {
-    width: 100%;
-    padding: 0.75rem;
-    margin-bottom: 1rem;
-    border: 1px solid #00c8f8;
-    border-radius: 8px;
-    font-size: 1rem;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #00c8f8;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
 }
 
 form textarea {
-    resize: vertical;
+  resize: vertical;
 }
 
 form button {
-    width: 100%;
-    background-color: #00c6f8;
-    color: #fff;
-    border: none;
-    padding: 0.9rem;
-    font-size: 1.1rem;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  width: 100%;
+  background-color: #00c6f8;
+  color: #fff;
+  border: none;
+  padding: 0.9rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 form button:hover {
-    background-color: #00c6f8;
+  background-color: #00c6f8;
 }
 
-/*sobre la empresa*/
-
-main.main--empresa {
-    padding: 2rem 1rem;
-}
-
-.section--empresa {
-    max-width: 800px;
-    margin: 0 auto 3rem;
-    text-align: center;
-}
-
-.section--empresa h1 {
-    font-size: 1.75rem;
-    color: #004080;
-    margin-bottom: 1rem;
-}
-
-.section--empresa h3 {
-    color: #004080;
-    margin-top: 2rem;
-    font-weight: 600;
-}
-
-.section--empresa p {
-    margin-bottom: 1rem;
-}
-
-.opiniones {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.section--opiniones__grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;
-    padding: 1rem;
-}
-
-.section--opiniones__imagenes img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.section--opiniones__imagenes img:hover {
-    transform: scale(1.03);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-}
-
-/*footer*/
-
-.footer {
-    margin-top: 3rem;
-    padding: 2rem;
-    background-color: #00c8f8;
-    color: #fff;
-}
-
-.footer--grid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-    text-align: center;
-}
-
-.footer_img {
-    max-width: 120px;
-    border-radius: 8px;
-}
-
-.footer--grid__column2__title h2 {
-    margin: 0;
-    border-bottom: 1px solid #fff;
-    padding-bottom: 0.5rem;
-}
-
-/*mediaquery*/
-
-@media (min-width: 768px) {
-
-    .navbar-nav {
-        align-items: center;
-        text-align: center;
-        justify-content: right;
-    }
-
-    .header--grid__column2 {
-        align-items: center;
-        text-align: center;
-        justify-content: right;
-        padding: 20px;
-    }
-
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    p {
-        font-size: 1.1rem;
-    }
-
-    .main--grid__section {
-        display: grid;
-        flex-direction: column;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        padding: 20px;
-    }
-
-    .section--empresa h1 {
-        font-size: 2.25rem;
-    }
-
-    .section--presupuesto {
-        max-width: 75vw;
-
-        background-color: #fff;
-        border-radius: 12px;
-        padding: 2rem;
-        box-shadow: 0 4px 16px #00c6f827;
-    }
-
-    form {
-        max-width: 800px;
-        padding: 2rem 3rem;
-    }
-
-    .section--opiniones__grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .footer {
-        display: flex;
-        padding: 0;
-        margin: 0;
-        width: 100%;
-
-    }
-
-    .footer--grid {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-
-    }
-
-    .footer--grid__column1,
-    .footer--grid__column2 {
-        flex: 1;
-
-    }
-
-    .footer--grid__column1 {
-
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        text-align: left;
-        padding-left: 20px;
-    }
-
-    .footer--grid__column2 {
-
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-end;
-        text-align: right;
-        padding-right: 20px;
-    }
-
-
-    .footer_img {
-        width: 150px;
-
-        margin-bottom: 0;
-    }
-
-    .footer_h2 {
-        font-weight: bold;
-        font-size: 1.5rem;
-
-    }
-
-    .footer--grid__column2__content {
-        font-size: 1rem;
-        margin: 0;
-        padding: 0;
-    }
-}
+/*# sourceMappingURL=styles.css.map */

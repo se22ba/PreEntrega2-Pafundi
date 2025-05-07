@@ -1,0 +1,49 @@
+h3 {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #00c8f8;
+}
+
+form {
+    background-color: #fff;
+    color: #00c8f8;
+    padding: 1.5rem;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 4px 12px #00c6f81a;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #00c8f8;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    width: 100%;
+    background-color: #00c6f8;
+    color: #fff;
+    border: none;
+    padding: 0.9rem;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #00c6f8;
+}
