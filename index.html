@@ -11,44 +11,54 @@
 </head>
 
 <body>
-    <div class="body--header">
-        <header class="header--grid">
-            <div class="header--grid__column1">
-                <img class="header_img" src="./images/logo.jpg" alt="" />
+    <nav class="navbar sticky-top av nav-pills  navbar-expand-xl bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo.jpg" alt="Bootstrap" width="30" height="30">
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"  aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">SHL Service</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="header--grid__column2">
-                <nav class="navbar navbar-expand-md navbar-dark bg-transparent">
-                    <div class="container">
-                        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse mt-2 mt-md-0" id="menuPrincipal">
-                            <ul class="navbar-nav ms-auto w-100">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./index.html">Inicio</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./pages/servicios.html">Servicios</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./pages/nuestros_cursos.html">Nuestros Cursos</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./pages/solicitar_presupuesto.html">Solicitar
-                                        Presupuesto</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./pages/sobre_la_empresa.html">Sobre la Empresa</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </header>
-    </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/nuestros_cursos.html">Nuestros Cursos</a>
+                  </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Solicitar Presupuesto
+                  </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./pages/presupuesto_aires_acondicionados.html">Aires Acondicionados</a></li>
+                  <li><a class="dropdown-item" href="./pages/presupuesto_heladeras_comerciales.html">Heladeras Comerciales</a></li>
+                  <li><a class="dropdown-item" href="./pages/presupuesto_heladeras_familiares.html">Heladeras Familiares</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="./pages/solicitar_presupuesto.html">Otras Consultas</a></li>
+                </ul>
+              </li>
+              <li><hr class="nav-link-divider"></li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/sobre_la_empresa.html">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" aria="true">Redes Sociales</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
     <main class="contenido_principal">
 
         <section class="main--section__contenido">
