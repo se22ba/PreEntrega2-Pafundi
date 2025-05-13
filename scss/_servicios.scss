@@ -1,7 +1,7 @@
 .servicios--grid__section{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px; /* espacio entre filas y columnas */
+    gap: 20px; 
     padding: 20px;
 }
 
