@@ -1,14 +1,14 @@
 @use './variables';
-@use './mediaQueri';
 @use './body';
-@use './cursos';
-@use './empresa';
-@use './footer';
 @use './header';
 @use './home';
-@use './presupuesto';
 @use './servicios';
+@use './cursos';
+@use './presupuesto';
 @use './solicitudPresupuesto';
+@use './empresa';
+@use './footer';
+@use './mediaQueri';
 
 
 

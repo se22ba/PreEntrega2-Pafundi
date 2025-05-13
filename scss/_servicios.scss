@@ -1,12 +1,32 @@
-.grid--section__column1 {
+.servicios--grid__section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; /* espacio entre filas y columnas */
+    padding: 20px;
+}
+
+.servicios--grid__column1 {
     position: relative;
     border-style: solid;
     border-radius: 10px;
     overflow: hidden;
+    
+}
+
+.column1__button{
+    text-align: center;
 }
 
 
-.grid--section__column1::before {
+
+.servicios--grid__column1 .grid--section__column1__content {
+    position: relative;
+    z-index: 1;
+    padding: 1rem;
+    color: #000;
+}
+
+.servicios--grid__column1::before {
     content: "";
     position: absolute;
     top: 0;
@@ -20,21 +40,15 @@
     z-index: 0;
 }
 
-.grid--section__column1 .grid--section__column1__content {
-    position: relative;
-    z-index: 1;
-    padding: 1rem;
-    color: #000;
-}
 
-.grid--section__column2 {
+.servicios--grid__column2 {
     position: relative;
     border-style: solid;
     border-radius: 10px;
     overflow: hidden;
 }
 
-.grid--section__column2::before {
+.servicios--grid__column2::before {
     content: "";
     position: absolute;
     top: 0;
@@ -48,21 +62,21 @@
     z-index: 0;
 }
 
-.grid--section__column2 .grid--section__column2__content {
+.servicios--grid__column2 .grid--section__column2__content {
     position: relative;
     z-index: 1;
     padding: 1rem;
     color: #000;
 }
 
-.grid--section__column3 {
+.servicios--grid__column3 {
     position: relative;
     border-style: solid;
     border-radius: 10px;
     overflow: hidden;
 }
 
-.grid--section__column3::before {
+.servicios--grid__column3::before {
     content: "";
     position: absolute;
     top: 0;
@@ -76,21 +90,21 @@
     z-index: 0;
 }
 
-.grid--section__column3 .grid--section__column3__content {
+.servicios--grid__column3 .grid--section__column3__content {
     position: relative;
     z-index: 1;
     padding: 1rem;
     color: #000;
 }
 
-.grid--section__column4 {
+.servicios--grid__column4 {
     position: relative;
     border-style: solid;
     border-radius: 10px;
     overflow: hidden;
 }
 
-.grid--section__column4::before {
+.servicios--grid__column4::before {
     content: "";
     position: absolute;
     top: 0;
@@ -104,7 +118,7 @@
     z-index: 0;
 }
 
-.grid--section__column4 .grid--section__column4__content {
+.servicios--grid__column4 .grid--section__column4__content {
     position: relative;
     z-index: 1;
     padding: 1rem;
