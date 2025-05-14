@@ -1,18 +1,59 @@
 
-.nav-underline .nav-link:hover {
-  color: rgb(80, 198, 238);
+.custom-navbar {
+  background-color: #00c8f8 !important;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 8px rgba(247, 247, 247, 0.1);
 }
 
-
-.nav-logo{
-  border-radius: 20px;
-  width: 50px;
-  height: 50px;
+.navbar-brand span {
+  color: rgb(5, 144, 224);
+  font-size: 1.25rem;
 }
 
-.navbar{
-  background-color: aqua;
+.nav-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
 }
+
+.nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #00aee3 !important;
+}
+
+.dropdown-menu {
+  background-color: #ffffff;
+  border: none;
+}
+
+.dropdown-item {
+  color: rgb(0, 157, 230);
+}
+
+.dropdown-item:hover {
+  background-color: #00aee3;
+  color: #ffffff;
+}
+
+.nav-divider {
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  margin: 0.5rem 0;
+}
+
+.offcanvas-header {
+  background-color: #00c8f8;
+}
+
+.btn-close-white {
+  filter: invert(1);
+}
+
 
 
 

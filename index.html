@@ -6,66 +6,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="./css/styles.css" />
   <title>Inicio</title>
 </head>
 
 <body>
-  <nav class="navbar sticky-top nav-underline navbar-expand-md bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="./index.html">
-        <img class="nav-logo" src="./images/logo.jpg" alt="Bootstrap">
+  <nav class="navbar navbar-expand-md sticky-top custom-navbar">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="./index.html">
+        <img src="./images/logo.jpg" alt="SHL Service" class="nav-logo me-2">
+        <span class="fw-bold text-white">SHL Service</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        aria-controls="offcanvasNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">SHL Service</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <h5 class="offcanvas-title">SHL Service</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
         </div>
         <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/servicios.html">Servicios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/nuestros_cursos.html">Nuestros Cursos</a>
-            </li>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="./pages/servicios.html">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="./pages/nuestros_cursos.html">Nuestros Cursos</a></li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Solicitar Presupuesto
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="./pages/presupuesto_aires_acondicionados.html">Aires
-                    Acondicionados</a></li>
-                <li><a class="dropdown-item" href="./pages/presupuesto_heladeras_comerciales.html">Heladeras
-                    Comerciales</a></li>
-                <li><a class="dropdown-item" href="./pages/presupuesto_heladeras_familiares.html">Heladeras
-                    Familiares</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="./pages/solicitar_presupuesto.html">Otras Consultas</a>
-                </li>
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Solicitar Presupuesto</a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="./pages/presupuesto_aires_acondicionados.html">Aires Acondicionados</a></li>
+                <li><a class="dropdown-item" href="./pages/presupuesto_heladeras_comerciales.html">Heladeras Comerciales</a></li>
+                <li><a class="dropdown-item" href="./pages/presupuesto_heladeras_familiares.html">Heladeras Familiares</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="./pages/solicitar_presupuesto.html">Otras Consultas</a></li>
               </ul>
             </li>
-            <li>
-              <hr class="nav-link-divider">
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/sobre_la_empresa.html">Sobre Nosotros</a>
-            </li>
-
+            <li><hr class="nav-divider"></li>
+            <li class="nav-item"><a class="nav-link" href="./pages/sobre_la_empresa.html">Sobre Nosotros</a></li>
           </ul>
-
         </div>
       </div>
+    </div>
   </nav>
   <main class="contenido--principal__grid">
 
@@ -112,22 +94,22 @@
   
 
   <footer class="footer">
-    <div class="footer--grid">
-      <div class="footer--grid__column1">
-        <img class="footer_img" src="./images/logo.jpg" alt="" />
+    <div class="container footer-grid">
+      <div class="footer-logo">
+        <img src="../images/logo.jpg" alt="Logo SHL Service" class="footer-img">
       </div>
-      <div class="footer--grid__column2">
-        <div class="footer--grid__column2__title">
-          <h2 class="footer_h2">CONTACTO</h2>
-        </div>
-        <div class="footer--grid__column2__content">
-          <p class="footer_p"></p>
-          Telefonos: (011) 15-5431-2782<br />Correo: shlrefrigeracion@gmail.com
-        </div>
-        <div class="footer--grid__column2__content">
-          <p>Lunes a sabados de 9 a 22 hs.</p>
-
-        </div>
+  
+      <div class="footer-contact">
+        <h2>Contacto</h2>
+        <ul class="contact-list">
+          <li><i class="bi bi-telephone-fill"></i> (011) 15-5431-2782</li>
+          <li><i class="bi bi-envelope-fill"></i> shlrefrigeracion@gmail.com</li>
+          <li><i class="bi bi-clock-fill"></i> Lunes a sábados de 9 a 22 hs.</li>
+        </ul>
+      </div>
+  
+      <div class="footer-copy">
+        <p>&copy; 2025 SHL Service. Todos los derechos reservados.</p>
       </div>
     </div>
   </footer>

@@ -1,17 +1,57 @@
-.video1 {
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4faff;
+    color: #333;
+  }
+  
+  .cursos_section {
+    background: url('../images/banner.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 64, 128, 0.8);
+    background-blend-mode: overlay;
+  }
+  
+  h1 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  
+  .lead {
+    color: #bfe9ff;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .descripcion {
+    max-width: 800px;
+    margin: 1rem auto;
+    font-size: 1.1rem;
+    color: #e0f7ff;
+    line-height: 1.6;
+  }
+  
+  .cursos_carousel .carousel {
+    max-width: 800px;
+  }
+  
+  .carousel-caption {
+    background-color: rgba(0, 64, 128, 0.7);
+    padding: 1rem;
     border-radius: 10px;
-    border: #00c8f8 solid 2px;
-    display: inline-block;
-}
-
-.video2 {
-    border-radius: 10px;
-    border: #00c8f8 solid 2px;
-    display: inline-block;
-}
-
-.video3 {
-    border-radius: 10px;
-    border: #00c8f8 solid 2px;
-    display: inline-block;
-}
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  }
+  
+  .carousel-caption h5,
+  .carousel-caption p {
+    color: #fff;
+    margin: 0;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: invert(100%);
+  }
