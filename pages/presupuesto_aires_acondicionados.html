@@ -2,127 +2,203 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../css/styles.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <title>Mant/Rep A/A</title>
 </head>
 
 <body class="body">
-    <nav class="navbar navbar-expand-md sticky-top custom-navbar">
-        <div class="container">
-          <a class="navbar-brand d-flex align-items-center" href="../index.html">
-            <img src="../images/logo.jpg" alt="SHL Service" class="nav-logo me-2">
-            <span class="fw-bold text-white">SHL Service</span>
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title">SHL Service</h5>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="./servicios.html">Servicios</a></li>
-                <li class="nav-item"><a class="nav-link" href="./nuestros_cursos.html">Nuestros Cursos</a></li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Solicitar Presupuesto</a>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="./presupuesto_aires_acondicionados.html">Aires Acondicionados</a></li>
-                    <li><a class="dropdown-item" href="./presupuesto_heladeras_comerciales.html">Heladeras Comerciales</a></li>
-                    <li><a class="dropdown-item" href="./presupuesto_heladeras_familiares.html">Heladeras Familiares</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="./solicitar_presupuesto.html">Otras Consultas</a></li>
-                  </ul>
+  <nav class="navbar navbar-expand-md sticky-top custom-navbar">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="../index.html">
+        <img src="../images/logo.jpg" alt="SHL Service" class="nav-logo me-2">
+        <span class="fw-bold text-white">SHL Service</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title">SHL Service</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="./servicios.html">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="./nuestros_cursos.html">Cursos</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Solicitar Presupuesto</a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="./presupuesto_i_aires_acondicionados.html">Instalación A/A</a></li>
+                <li><a class="dropdown-item" href="./presupuesto_aires_acondicionados.html"> Mantenimiento y Reparación
+                    A/A</a></li>
+                <li><a class="dropdown-item" href="./presupuesto_heladeras_comerciales.html">Heladeras Comerciales</a>
                 </li>
-                <li><hr class="nav-divider"></li>
-                <li class="nav-item"><a class="nav-link" href="./sobre_la_empresa.html">Sobre Nosotros</a></li>
+                <li><a class="dropdown-item" href="./presupuesto_heladeras_familiares.html">Heladeras Familiares</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="./otras_consultas.html">Otras Consultas</a></li>
               </ul>
-            </div>
-          </div>
+            </li>
+            <li>
+              <hr class="nav-divider">
+            </li>
+            <li class="nav-item"><a class="nav-link" href="./sobre_la_empresa.html">Nosotros</a></li>
+          </ul>
         </div>
-      </nav>
-    <section class="section--presupuesto--servicios">
-        <h3>Solicitar Presupuesto</h3>
-        <form class="section--presupuesto__form" action="#" method="post">
-            <input type="text" placeholder="Nombre y apellido" id="nombre" name="nombre" required>
-            <input type="email" placeholder="Email" id="email" name="email" required>
-            <input type="text" placeholder="Teléfono / Celular" id="telefono" name="telefono" required>
-            <input type="text" placeholder="Domicilio" id="domicilio" name="domicilio" required>
+      </div>
+    </div>
+  </nav>
+  <section class="section--presupuesto">
+    <h1>Solicitar Presupuesto</h1>
+    <p>
+      Estimado cliente, su tiempo y comodidad son muy importantes para nosotros, por eso le pedimos que complete
+      el siguiente formulario con la mayor precisión posible. Este paso previo es fundamental para brindarle un
+      servicio más ágil, organizado y eficiente. Al contar con esta información anticipadamente, el profesional
+      matriculado que lo visite estará completamente informado sobre las características específicas del trabajo a
+      realizar, lo que le permitirá llegar al domicilio preparado, con los insumos y herramientas adecuadas para
+      la tarea.
+    </p>
+    <p>
+      Además, este formulario nos ayuda a comprender en detalle sus necesidades particulares, ya sea que se trate
+      de una instalación nueva, una reparación, una revisión técnica o el mantenimiento preventivo del equipo. De
+      este modo, no solo optimizamos el tiempo del presupuesto definitivo, sino que también garantizamos una
+      atención personalizada y orientada a resolver su situación de la manera más efectiva posible.
+    </p>
+    <p>
+      Una vez completado el formulario, usted recibirá un correo electrónico automático con un cálculo estimativo
+      del costo total del servicio, basado en los datos que usted haya ingresado. Este valor no reemplaza al
+      presupuesto final que se definirá en el lugar, pero sí le servirá como una referencia inicial para su
+      tranquilidad.
+    </p>
+    <p>
+      Por favor, tenga en cuenta que el correcto llenado del formulario agiliza todo el proceso y nos permite
+      brindarle un servicio de mayor calidad. A continuación, podrá seleccionar el tipo de servicio para el cual
+      desea solicitar presupuesto: aires acondicionados, heladeras familiares o heladeras comerciales. Según su
+      elección, se cargará automáticamente el formulario específico correspondiente a su necesidad. ¡Gracias por
+      confiar en nosotros!
+    </p>
 
-            <select id="localidad" name="localidad" required>
-                <option value="" disabled selected>Selecciona tu localidad</option>
-                <option value="zona_norte">Zona Norte</option>
-                <option value="zona_oeste">Zona Oeste</option>
-                <option value="caba">CABA</option>
-            </select>
+  </section>
+  <section class="section--presupuesto--servicios">
+    <h3>DATOS PERSONALES</h3>
+    <form class="section--presupuesto__form" action="#" method="post">
+      <input type="text" placeholder="Nombre y apellido" id="nombre" name="nombre" required>
+      <input type="email" placeholder="Email" id="email" name="email" required>
+      <input type="text" placeholder="Teléfono / Celular" id="telefono" name="telefono" required>
+      <input type="text" placeholder="Domicilio" id="domicilio" name="domicilio" required>
 
-            <h3>Datos del equipo</h3>
+      <select id="localidad" name="localidad" required>
+        <option value="" disabled selected>Selecciona tu localidad</option>
+        <option value="zona_norte">Zona Norte</option>
+        <option value="zona_oeste">Zona Oeste</option>
+        <option value="caba">CABA</option>
+      </select>
 
-            <select id="tipo" name="tipo" required>
-                <option value="" disabled selected>Selecciona el tipo de equipo</option>
-                <option value="heladera">Heladera</option>
-                <option value="heladera_comercial">Heladera Comercial</option>
-                <option value="aire">Aire Acondicionado</option>
-            </select>
+      <h3>DATOS DEL EQUIPO</h3>
 
-            <input type="text" placeholder="Detalles del equipo" id="detalles" name="detalles" required>
+      <select id="tipo" name="tipo" required>
+        <option value="" disabled selected>Selecciona el tipo de equipo</option>
+        <option value="frio">Frio solo</option>
+        <option value="frio_calor">Frio/Calor</option>
 
-            <select id="marca" name="marca" required>
-                <option value="" disabled selected>Selecciona la marca</option>
-                <option value="surrey">Surrey</option>
-                <option value="lg">LG</option>
-                <option value="samsung">Samsung</option>
-            </select>
+      </select>
 
-            <select id="inmueble" name="inmueble" required>
-                <option value="" disabled selected>Tipo de inmueble</option>
-                <option value="casa">Casa</option>
-                <option value="edificio">Edificio</option>
-            </select>
+      <select id="tipo" name="tipo" required>
+        <option value="" disabled selected>Tipo de Aire Acondicionado</option>
+        <option value="split">Split</option>
+        <option value="ventana">Ventana</option>
+        <option value="roof">Piso Techo</option>
+      </select>
 
-            <h3>Información adicional</h3>
-            <textarea id="adicional" name="adicional"
-                placeholder="Indique cualquier información adicional que nos ayude a preparar su presupuesto" rows="4"
-                required></textarea>
+      <select id="marca" name="marca" required>Whirlpool
+        <option value="" disabled selected>Selecciona la marca</option>
+        <option value="Samsung">Samsung</option>
+        <option value="LG">LG</option>
+        <option value="Whirlpool">Whirlpool</option>
+        <option value="Electrolux">Electrolux</option>
+        <option value="Gafa">Gafa</option>
+        <option value="Philco">Philco</option>
+        <option value="Drean">Drean</option>
+        <option value="Patrick">Patrick</option>
+        <option value="Inelro">Inelro</option>
+        <option value="Bosch">Bosch</option>
+        <option value="Hisense">Hisense</option>
+        <option value="OTRA">OTRA</option>
 
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+      </select>
 
-    <footer class="footer">
-        <div class="container footer-grid">
-          <div class="footer-logo">
-            <img src="../images/logo.jpg" alt="Logo SHL Service" class="footer-img">
-          </div>
-      
-          <div class="footer-contact">
-            <h2>Contacto</h2>
-            <ul class="contact-list">
-              <li><i class="bi bi-telephone-fill"></i> (011) 15-5431-2782</li>
-              <li><i class="bi bi-envelope-fill"></i> shlrefrigeracion@gmail.com</li>
-              <li><i class="bi bi-clock-fill"></i> Lunes a sábados de 9 a 22 hs.</li>
-            </ul>
-          </div>
-      
-          <div class="footer-copy">
-            <p>&copy; 2025 SHL Service. Todos los derechos reservados.</p>
-          </div>
-        </div>
-      </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"
-        integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+"
-        crossorigin="anonymous"></script>
+      <select id="tipo" name="tipo" required>
+        <option value="" disabled selected>Altura unidad exterior (aprox)</option>
+        <option value="3mtrs">Menor a 3 (tres) metros</option>
+        <option value="3_6mtrs">Mayor a 3 (tres) metros, menor a 6 (seis) metros</option>
+        <option value="6mtrs">Mayor a 6 (seis) metros</option>
+
+      </select>
+
+      <select id="inmueble" name="inmueble" required>
+        <option value="" disabled selected>Tipo de inmueble</option>
+        <option value="casa">Casa</option>
+        <option value="edificio">Edificio</option>
+      </select>
+
+      <h3>INFORMACION ADICIONAL</h3>
+      <textarea id="adicional" name="adicional"
+        placeholder="Indique cualquier información adicional que nos ayude a preparar su presupuesto" rows="4"
+        required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-logo">
+        <img src="../images/logo.jpg" alt="Logo SHL Service" class="footer-img">
+      </div>
+
+      <div class="footer-contact">
+        <h2>Contacto</h2>
+        <ul class="contact-list">
+          <li><i class="bi bi-telephone-fill"></i> (011) 15-5431-2782</li>
+          <li><i class="bi bi-envelope-fill"></i> shlrefrigeracion@gmail.com</li>
+          <li><i class="bi bi-clock-fill"></i> Lunes a sábados de 9 a 22 hs.</li>
+        </ul>
+      </div>
+
+      <div class="footer-copy">
+        <p>&copy; 2025 SHL Service. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+  <a href="https://wa.me/+5491154312782" 
+  class="whatsapp-float" 
+  target="_blank" 
+  aria-label="Contactar por WhatsApp"
+  data-aos="zoom-in" 
+  data-aos-delay="500">
+ <i class="bi bi-whatsapp"></i>
+ <span class="tooltip-float">¿Necesitás ayuda?</span>
+</a>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"
+    integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>

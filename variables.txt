@@ -1,10 +1,15 @@
+_variables.scss
+
+_variables.scss:
+
+variables.scss
+
 // Colores principales
-$color-primario: #00c8f8;
+
 $color-secundario: #004080;
 $color-secundario-hover: #0059b3;
 $color-acento: #00aee3;
 $color-link-hover: #007BFF;
-
 
 // Colores de texto
 $color-texto-principal: #333;
@@ -12,15 +17,14 @@ $color-texto-blanco: #ffffff;
 $color-texto-oscuro: #2b2b2b;
 $color-texto-lead: #bfe9ff;
 $color-descripcion: #e0f7ff;
-$color-titulo-empresa: #00c8f8;
+$color-titulo-empresa: #004080;
 
 // Colores adicionales
-$color-whatsapp: #25D366;
-$color-fondo-claro: #ffffff;
+$color-fondo-claro: #f4faff;
 $color-overlay: rgba(169, 175, 182, 0.6);
 $color-overlay-banner: rgba(0, 64, 128, 0.8);
 $color-caption-fondo: rgba(0, 64, 128, 0.7);
-$color-shadow-claro: rgba(0, 0, 0, 0.1);
+$color-shadow-claro: rgba(247, 247, 247, 0.1);
 $color-shadow-form: rgba(0, 198, 248, 0.1);
 $color-shadow-form-md: rgba(0, 198, 248, 0.15);
 $color-borde: #ccc;
@@ -33,10 +37,9 @@ $fuente-principal: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 $padding-seccion: 2rem;
 $padding-input: 0.75rem;
 $gap-grid: 1rem;
-$margin-seccion: 2rem;
 
 // Sombras
-$sombra-ligera: 0 2px 10px $color-shadow-claro;
+$sombra-ligera: 0 2px 8px $color-shadow-claro;
 $sombra-media: 0 4px 12px rgba(0, 0, 0, 0.05);
 $sombra-fuerte: 0 4px 16px rgba(0, 0, 0, 0.08);
 $sombra-hover: 0 6px 20px rgba(0, 0, 0, 0.15);

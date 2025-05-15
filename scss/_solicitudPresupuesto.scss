@@ -1,49 +1,41 @@
+@import 'variables';
+@import 'mixins';
+
 h3 {
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    color: #00c8f8;
+  text-align: center;
+  margin-top: $padding-seccion;
+  margin-bottom: 1rem;
+  color: $color-primario;
 }
 
 form {
-    background-color: #fff;
-    color: #00c8f8;
-    padding: 1.5rem;
-    border-radius: 12px;
-    width: 90%;
-    max-width: 900px;
-    margin: 0 auto;
-    box-shadow: 0 4px 12px #00c6f81a;
-}
+  background-color: $color-texto-blanco;
+  color: $color-primario;
+  padding: 1.5rem;
+  @include border-radius($radio-caja);
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  @include box-shadow($sombra-media);
 
-form input,
-form select,
-form textarea {
-    width: 100%;
-    padding: 0.75rem;
-    margin-bottom: 1rem;
-    border: 1px solid #00c8f8;
-    border-radius: 8px;
-    font-size: 1rem;
-    box-sizing: border-box;
-}
+  input,
+  select,
+  textarea {
+    @include input-style;
+    border: 1px solid $color-primario;
+    @include border-radius($radio-imagen);
+  }
 
-form textarea {
+  textarea {
     resize: vertical;
-}
+  }
 
-form button {
+  button {
     width: 100%;
-    background-color: #00c6f8;
-    color: #fff;
-    border: none;
-    padding: 0.9rem;
     font-size: 1.1rem;
-    border-radius: 8px;
+    border: none;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-form button:hover {
-    background-color: #00c6f8;
+    @include border-radius($radio-imagen);
+    @include button-style($color-primario, $color-acento, $color-texto-blanco);
+  }
 }

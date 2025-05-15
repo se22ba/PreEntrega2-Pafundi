@@ -1,0 +1,64 @@
+@import 'variables';
+@import 'mixins';
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 3rem;
+    z-index: 999;
+    width: 60px;
+    height: 60px;
+    background-color: $color-whatsapp;
+    color: $color-texto-blanco;
+    font-size: 2rem;
+    @include border-radius(50%);
+    @include flex-center;
+    @include box-shadow($sombra-fuerte);
+    @include transition($transicion-base);
+    text-decoration: none;
+    cursor: pointer;
+  
+    i {
+      font-size: 1.8rem;
+    }
+  
+    &:hover {
+      background-color: $color-secundario-hover;
+      transform: scale(1.1);
+  
+      .tooltip-float {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(-100%) translateX(-50%);
+      }
+    }
+  
+    .tooltip-float {
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: $color-secundario;
+      color: $color-texto-blanco;
+      padding: 0.5rem 1rem;
+      font-size: 0.875rem;
+      white-space: nowrap;
+      @include border-radius(8px);
+      @include box-shadow($sombra-media);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      pointer-events: none;
+  
+      &::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-width: 6px;
+        border-style: solid;
+        border-color: $color-secundario transparent transparent transparent;
+      }
+    }
+  }

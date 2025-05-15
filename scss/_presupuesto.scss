@@ -1,52 +1,56 @@
+@import 'variables';
+@import 'mixins';
+
 .section--presupuesto {
-    max-width: 600px;
-    margin: auto;
-    background-color: #fff;
-    border-radius: 12px;
-    padding: 2rem;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  max-width: 600px;
+  margin: auto;
+  background-color: $color-texto-blanco;
+  @include border-radius($radio-caja);
+  padding: $padding-seccion;
+  @include box-shadow($sombra-fuerte);
 }
 
 h1 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    color: #2b2b2b;
-    text-align: center;
+  @include responsive-text(1.8rem, 2rem, 2.2rem);
+  margin-bottom: 1rem;
+  color: $color-titulo-empresa;
+  text-align: center;
 }
 
 p {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 2rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
 }
 
 h3 {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    color: #004a7c;
+  @include responsive-text(1.2rem, 1.4rem, 1.6rem);
+  margin-bottom: 1rem;
+  color: $color-titulo-empresa;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: $gap-grid;
 }
 
 label {
-    font-weight: 600;
-    margin-bottom: 0.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 
 select {
-    padding: 0.75rem;
-    font-size: 1rem;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    background-color: #fff;
-    transition: border-color 0.3s ease;
+  padding: $padding-input;
+  font-size: 1rem;
+  @include border-radius($radio-imagen);
+  border: 1px solid $color-borde;
+  background-color: $color-texto-blanco;
+  @include transition(border-color $transicion-base);
+
+  &:focus {
+    border-color: $color-primario;
+    outline: none;
+  }
 }
 
-select:focus {
-    border-color: #00c8f8;
-    outline: none;
-}

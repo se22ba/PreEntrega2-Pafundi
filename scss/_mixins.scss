@@ -1,0 +1,85 @@
+@mixin box-shadow($shadow...) {
+    box-shadow: $shadow;
+  }
+  
+  @mixin border-radius($radius) {
+    border-radius: $radius;
+  }
+  
+  @mixin transition($args...) {
+    transition: $args;
+  }
+  
+  @mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin grid-columns($count) {
+    display: grid;
+    grid-template-columns: repeat($count, 1fr);
+    gap: 1rem;
+  }
+  
+  @mixin background-overlay($image, $color) {
+    background: url($image) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: $color;
+    background-blend-mode: overlay;
+  }
+  
+  @mixin input-style {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  @mixin hover-scale {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+  }
+  
+  @mixin responsive-text($base-size, $md-size, $xl-size) {
+    & {
+      font-size: $base-size;
+    }
+  
+    @media (min-width: 768px) {
+      & {
+        font-size: $md-size;
+      }
+    }
+  
+    @media (min-width: 1280px) {
+      & {
+        font-size: $xl-size;
+      }
+    }
+  }
+  
+  @mixin centered-container($max-width: 1200px) {
+    max-width: $max-width;
+    margin: 0 auto;
+  }
+  
+  @mixin button-style($bg-color, $hover-color, $text-color: #fff) {
+    display: inline-block;
+    background-color: $bg-color;
+    color: $text-color;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: $hover-color;
+    }
+  }
+  

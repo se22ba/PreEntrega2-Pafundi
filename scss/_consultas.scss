@@ -1,0 +1,83 @@
+@import 'variables';
+@import 'mixins';
+
+
+%texto-basico {
+  font-family: $fuente-principal;
+  color: $color-texto-principal;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+%seccion-container {
+  padding: $padding-seccion;
+  margin: $margin-seccion;
+  background-color: $color-fondo-claro;
+  @include box-shadow($sombra-ligera);
+  @include border-radius($radio-caja);
+}
+
+// Estilos específicos de la sección
+.otras-consultas {
+  @extend %seccion-container;
+
+  .container {
+    @include centered-container();
+  }
+
+  .section-title {
+    text-align: center;
+    color: $color-titulo-empresa;
+    margin-bottom: 1.5rem;
+    @include responsive-text(1.5rem, 2rem, 2.5rem);
+  }
+
+  p {
+    @extend %texto-basico;
+  }
+
+  ul {
+    padding-left: 1.2rem;
+    margin-bottom: 2rem;
+    @extend %texto-basico;
+
+    li {
+      position: relative;
+      padding-left: 1.2rem;
+      margin-bottom: 0.5rem;
+
+      &::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: $color-primario;
+        font-weight: bold;
+      }
+    }
+  }
+
+  h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: $color-primario;
+    @include responsive-text(1.2rem, 1.5rem, 1.75rem);
+  }
+
+  .contacto-extra {
+    background-color: $color-descripcion;
+    padding: 1rem;
+    margin: 2rem 0;
+    @include border-radius($radio-caja);
+    @include box-shadow($sombra-media);
+    p {
+      margin: 0;
+      font-weight: 500;
+      color: $color-texto-oscuro;
+    }
+  }
+
+  em {
+    color: $color-secundario;
+    font-style: italic;
+  }
+}
