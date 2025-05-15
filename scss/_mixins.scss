@@ -21,6 +21,8 @@
     grid-template-columns: repeat($count, 1fr);
     gap: 1rem;
   }
+
+  
   
   @mixin background-overlay($image, $color) {
     background: url($image) no-repeat center center;
